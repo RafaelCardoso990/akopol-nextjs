@@ -37,6 +37,10 @@ const Header = () => {
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
           <Logo />
+          <div className="">
+            <h1 className="h1">AKOPOL</h1>
+            <p className="text-4xl leading-none font-bold text-primary">Agência de Detetives</p>
+          </div>
           <div className="flex items-center gap-x-6">
             {/* Nav */}
             <Nav

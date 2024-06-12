@@ -8,9 +8,9 @@ import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 
 const links = [
-  { path: "/", name: "home" },
-  { path: "/projects", name: "my projects" },
-  { path: "/contact", name: "contact" },
+  { path: "/", name: "Home" },
+  { path: "/projects", name: "Serviços" },
+  { path: "/contact", name: "Contato" },
 ];
 
 const Nav = ({ containerStyles, linkStyles, underlineStyles }: any) => {

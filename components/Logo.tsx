@@ -4,7 +4,7 @@ import Image from "next/image";
 const Logo = (): any => {
   return (
   <Link href="/">
-    <Image src="/logo.png" width={120} height={120} priority alt=""/>
+    <Image className="hidden xl:flex" src="/logo.png" width={120} height={120} priority alt=""/>
   </Link>
 );
 };
