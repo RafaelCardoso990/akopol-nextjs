@@ -7,6 +7,7 @@ import ThemeToogler from "./ThemeToogler";
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const Header = () => {
   const [header, setHeader] = useState<boolean>(false);
@@ -37,10 +38,10 @@ const Header = () => {
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
           <Logo />
-          <div className="">
+          <Link href="/">
             <h1 className="h1">AKOPOL</h1>
             <p className="text-4xl leading-none font-bold text-primary">Agência de Detetives</p>
-          </div>
+          </Link>
           <div className="flex items-center gap-x-6">
             {/* Nav */}
             <Nav

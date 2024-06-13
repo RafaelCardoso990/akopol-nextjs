@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 const links = [
   { path: "/", name: "Home" },
   { path: "/projects", name: "Serviços" },
+  { path: "/equipment", name: "Equipamentos" },
   { path: "/contact", name: "Contato" },
 ];
 

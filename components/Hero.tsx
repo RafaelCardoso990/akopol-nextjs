@@ -22,7 +22,7 @@ const Hero = () => {
             <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
               Investigações
             </div>
-            <h1 className="h1 mb-4">Akopól: Detetives especializado, soluções eficazes</h1>
+            <h1 className="h1 mb-4">Akopol: Detetives especializado, soluções eficazes</h1>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
             "Mais difícil do que tornar-se um líder,
             é manter a liderança por mais de 37 anos"

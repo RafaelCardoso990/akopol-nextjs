@@ -9,7 +9,7 @@ const ProjectCard = ({ project }: any) => {
     <Card className="group  relative">
       <CardHeader className="p-0">
         {/* image */}
-        <div className="relative w-[full] h-[300px] flex items-center justify-center bg-tertiary dark:bg-secondary/40 xl:bg-work_project_bg_light xl:dark:bg-work_project_bg_dark xl:bg-[110%] xl:bg-no-repeat overflow-hidden">
+        <div className="rounded-[30px] relative w-[full] h-[300px] flex items-center justify-center bg-tertiary dark:bg-secondary/40 xl:bg-work_project_bg_light xl:dark:bg-work_project_bg_dark xl:bg-[110%] xl:bg-no-repeat overflow-hidden">
           <Image
             className="absolute bottom-0 shadow-2xl"
             src={project.image}
@@ -20,7 +20,7 @@ const ProjectCard = ({ project }: any) => {
           />          
         </div>
       </CardHeader>
-      <div className="h-full px-8 py-6">
+      <div className="h-full  px-8 py-6">
         <Badge className="uppercase text-sm font-medium mb-2 absolute top-4 left-5">
           {project.category}
         </Badge>
