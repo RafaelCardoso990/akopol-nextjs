@@ -9,8 +9,8 @@ Proposta de site desenvolvida para substituir o akopol.com.br. O cliente solicit
 -[Sobre](#sobre)
 -[Tecnologias](#tecnologias)
 -[Instalação](#instalação)
--[Uso](#uso)
--[Contato](#Contato)
+-[Proposito](#proposito)
+-[Imagens](#imagens)
 
 ## Sobre
 
@@ -37,5 +37,17 @@ npm install
 # Rode o codigo
 npm run start
 ```
+
+## Proposito
+
+Criar este site foi um desafio, pois queria desenvolver utilizando uma tecnologia nova para mim: Next.js. Escolhi essa ferramenta, junto com Tailwind CSS, para ampliar meus conhecimentos. Embora o projeto fosse simples, dediquei um tempo significativo para entendê-lo profundamente e dominar essas tecnologias. Finalizar este site me proporcionou um aprendizado valioso e consolidou minhas habilidades com Next.js e Tailwind CSS.
+
+## Imagens
+
+![Mockups](https://i.ibb.co/BK3dL5p/1-removebg-preview-1.png)
+![Mockups](https://i.ibb.co/Stj3xsc/3-removebg-preview.png)
+![Mockups](https://i.ibb.co/B3L7rHY/2-removebg-preview.png)
+![Mockups](https://i.ibb.co/vhhKYST/4-removebg-preview.png)
+
 
 
