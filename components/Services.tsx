@@ -1,48 +1,42 @@
-import { GanttChartSquare, Blocks, Gem } from "lucide-react";
+import { GanttChartSquare, Blocks, Gem } from 'lucide-react';
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "./ui/card";
+} from './ui/card';
 
 const servicesData = [
   {
     icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
-    title: "Investigação",
-    description:
-      "Traição Pré Nupcial",
+    title: 'Investigação',
+    description: 'Traição Pré Nupcial',
   },
   {
     icon: <Blocks size={72} strokeWidth={0.8} />,
-    title: "Teste de Fidelidade",
-    description:
-      "",
+    title: 'Teste de Fidelidade',
+    description: '',
   },
   {
     icon: <Gem size={72} strokeWidth={0.8} />,
-    title: "Pensão Alimentícia",
-    description:
-      "Fraudes Processuais",
+    title: 'Pensão Alimentícia',
+    description: 'Fraudes Processuais',
   },
   {
     icon: <Gem size={72} strokeWidth={0.8} />,
-    title: "Localização ",
-    description:
-      "Pessoas, bens e imóveis",
+    title: 'Localização ',
+    description: 'Pessoas, bens e imóveis',
   },
   {
     icon: <Gem size={72} strokeWidth={0.8} />,
-    title: "Investigação",
-    description:
-      "Empregados fingindo enfermidades e incidentes",
+    title: 'Investigação',
+    description: 'Empregados fingindo enfermidades e incidentes',
   },
   {
     icon: <Gem size={72} strokeWidth={0.8} />,
-    title: "App Development",
-    description:
-      "Fraudes Processuais Trabalhistas",
+    title: 'App Development',
+    description: 'Fraudes Processuais Trabalhistas',
   },
 ];
 
@@ -68,7 +62,9 @@ const Services = () => {
                 </CardHeader>
                 <CardContent className="text-center ">
                   <CardTitle className="mb-4">{item.title}</CardTitle>
-                  <CardDescription className="text-lg">{item.description}</CardDescription>
+                  <CardDescription className="text-lg">
+                    {item.description}
+                  </CardDescription>
                 </CardContent>
               </Card>
             );

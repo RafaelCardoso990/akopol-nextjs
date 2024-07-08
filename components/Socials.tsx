@@ -1,44 +1,48 @@
-"use client";
+'use client';
 import {
   RiYoutubeFill,
   RiLinkedinFill,
   RiGithubFill,
   RiFacebookFill,
   RiInstagramFill,
-} from "react-icons/ri";
-import Link from "next/link";
+} from 'react-icons/ri';
+import Link from 'next/link';
 
 const icons = [
   {
-    path: "/",
+    path: '/',
     name: <RiYoutubeFill />,
   },
   {
-    path: "/",
+    path: '/',
     name: <RiLinkedinFill />,
   },
   {
-    path: "/",
+    path: '/',
     name: <RiGithubFill />,
   },
   {
-    path: "/",
+    path: '/',
     name: <RiFacebookFill />,
   },
   {
-    path: "/",
+    path: '/',
     name: <RiInstagramFill />,
   },
 ];
 
-const Socials = ({containerStyles, iconsStyles}: any) => {
-  return <div className={`${containerStyles}`}>
-    {icons.map((icon, index) => {
-      return <Link href={icon.path} key={index}>
-        <div className={`${iconsStyles}`}>{icon.name}</div>
-      </Link>
-    })}
-  </div>;
+const Socials = ({ containerStyles, iconsStyles }: any) => {
+  return (
+    <div className={`${containerStyles}`}>
+      {icons.map((icon, index) => {
+        return (
+          <Link href={icon.path} key={index}>
+            <div className={`${iconsStyles}`}>{icon.name}</div>
+          </Link>
+        );
+      })}
+    </div>
+  );
 };
 
 export default Socials;

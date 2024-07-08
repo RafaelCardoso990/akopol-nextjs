@@ -1,7 +1,7 @@
-"use client";
-import Form from "@/components/Form";
-import { MailIcon, HomeIcon, PhoneCall } from "lucide-react";
-import React from "react";
+'use client';
+import Form from '@/components/Form';
+import { MailIcon, HomeIcon, PhoneCall } from 'lucide-react';
+import React from 'react';
 
 const Contact = () => {
   return (
@@ -17,8 +17,9 @@ const Contact = () => {
             </div>
             <h1 className="h1 max-w-md mb-8">Vamos trabalhar juntos.</h1>
             <p className="subtitle max-w-[400px]">
-              Proteja a sua Família, Empresa, Comércio ou Indústria! <br/> Contrate os
-              Serviços da Agência Akopol - Detetives Profissionais Particulares <br/>
+              Proteja a sua Família, Empresa, Comércio ou Indústria! <br />{' '}
+              Contrate os Serviços da Agência Akopol - Detetives Profissionais
+              Particulares <br />
               Considerada uma das melhores Agências de Investigações do País!
             </p>
           </div>
@@ -43,8 +44,7 @@ const Contact = () => {
               <PhoneCall size={18} className="text-primary" />
               <div>+55319999999999</div>
             </div>
-          </div>
-          <Form>Form</Form>
+          </div>          
         </div>
         {/* info text */}
       </div>

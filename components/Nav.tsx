@@ -1,17 +1,17 @@
 //links (nextjs)
-import Link from "next/link";
+import Link from 'next/link';
 
 // next hooks
-import { usePathname } from "next/navigation";
+import { usePathname } from 'next/navigation';
 
 // framer motion
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
 const links = [
-  { path: "/", name: "Home" },
-  { path: "/projects", name: "Serviços" },
-  { path: "/equipment", name: "Equipamentos" },
-  { path: "/contact", name: "Contato" },
+  { path: '/', name: 'Home' },
+  { path: '/projects', name: 'Serviços' },
+  { path: '/equipment', name: 'Equipamentos' },
+  { path: '/contact', name: 'Contato' },
 ];
 
 const Nav = ({ containerStyles, linkStyles, underlineStyles }: any) => {
@@ -27,9 +27,9 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles }: any) => {
           >
             {link.path === path && (
               <motion.span
-                initial={{ y: "-100%" }}
+                initial={{ y: '-100%' }}
                 animate={{ y: 0 }}
-                transition={{ type: "tween" }}
+                transition={{ type: 'tween' }}
                 layoutId="underline"
                 className={`${underlineStyles}`}
               />

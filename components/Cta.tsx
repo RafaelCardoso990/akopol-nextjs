@@ -1,5 +1,5 @@
-import { Button } from "./ui/button";
-import Link from "next/link";
+import { Button } from './ui/button';
+import Link from 'next/link';
 
 const Cta = () => {
   return (
@@ -7,7 +7,8 @@ const Cta = () => {
       <div className="container mx-auto">
         <div className="flex flex-col items-center">
           <h2 className="h2 max-w-xl text-center mb-8">
-          Pronto para transformar suspeitas em respostas concretas? Estou aqui para ajudar.
+            Pronto para transformar suspeitas em respostas concretas? Estou aqui
+            para ajudar.
           </h2>
           <Link href="/contact">
             <Button>Entre em contato</Button>

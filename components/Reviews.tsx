@@ -1,62 +1,68 @@
-"use client";
+'use client';
 
-import Image from "next/image";
+import Image from 'next/image';
 import {
   Card,
   CardHeader,
   CardDescription,
   CardTitle,
-} from "@/components/ui/card";
+} from '@/components/ui/card';
 
 // import swiper styles
 
-import "swiper/css";
-import "swiper/css/pagination";
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 //import required modules
 
-import { Pagination } from "swiper/modules";
+import { Pagination } from 'swiper/modules';
 
 // components
 
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 const reviewsData = [
   {
-    avatar: "/reviews/avatar-1.png",
-    name: "Lucas Bernardo",
-    job: "Cliente",
-    review: "Contratei a Akopol para uma empresa e fiquei impressionado com sua eficiência e profissionalismo.",
+    avatar: '/reviews/avatar-1.png',
+    name: 'Lucas Bernardo',
+    job: 'Cliente',
+    review:
+      'Contratei a Akopol para uma empresa e fiquei impressionado com sua eficiência e profissionalismo.',
   },
   {
-    avatar: "/reviews/avatar-2.png",
-    name: "Laura Briorufino",
-    job: "Cliente",
-    review: "Estavas com problemas em casa e a Akopol superou minhas expectativas. Recomendo!",
+    avatar: '/reviews/avatar-2.png',
+    name: 'Laura Briorufino',
+    job: 'Cliente',
+    review:
+      'Estavas com problemas em casa e a Akopol superou minhas expectativas. Recomendo!',
   },
   {
-    avatar: "/reviews/avatar-3.png",
-    name: "Lucas Andrada",
-    job: "Cliente",
-    review: "A Akopol foi extremamente discreta e eficaz em minha industria. Excelente serviço!",
+    avatar: '/reviews/avatar-3.png',
+    name: 'Lucas Andrada',
+    job: 'Cliente',
+    review:
+      'A Akopol foi extremamente discreta e eficaz em minha industria. Excelente serviço!',
   },
   {
-    avatar: "/reviews/avatar-4.png",
-    name: "Ana Carolina",
-    job: "Cliente",
-    review: "Contratamos a Akopol para auditoria em nossa empresa. O resultado foi além do esperado. Recomendo!",
+    avatar: '/reviews/avatar-4.png',
+    name: 'Ana Carolina',
+    job: 'Cliente',
+    review:
+      'Contratamos a Akopol para auditoria em nossa empresa. O resultado foi além do esperado. Recomendo!',
   },
   {
-    avatar: "/reviews/avatar-5.png",
-    name: "Pedro Cardoso",
-    job: "Cliente",
-    review: "A equipe da Akopol foi muito prestativa no nosso caso. Profissionais altamente competentes!",
+    avatar: '/reviews/avatar-5.png',
+    name: 'Pedro Cardoso',
+    job: 'Cliente',
+    review:
+      'A equipe da Akopol foi muito prestativa no nosso caso. Profissionais altamente competentes!',
   },
   {
-    avatar: "/reviews/avatar-6.png",
-    name: "Igor Alvares",
-    job: "Cliente",
-    review: "Os detetives da Akopol foram essenciais na solução do caso da minha empresa. Profissionalismo exemplar!",
+    avatar: '/reviews/avatar-6.png',
+    name: 'Igor Alvares',
+    job: 'Cliente',
+    review:
+      'Os detetives da Akopol foram essenciais na solução do caso da minha empresa. Profissionalismo exemplar!',
   },
 ];
 

@@ -1,16 +1,16 @@
-import Link from "next/link";
-import { Button } from "./ui/button";
-import { Download, Send } from "lucide-react";
+import Link from 'next/link';
+import { Button } from './ui/button';
+import { Download, Send } from 'lucide-react';
 import {
   RiBriefcase4Fill,
   RiTeamFill,
   RiTodoFill,
   RiArrowDownSLine,
-} from "react-icons/ri";
+} from 'react-icons/ri';
 
-import DevImg from "./DevImg";
-import Badge from "./Badge";
-import Socials from "./Socials";
+import DevImg from './DevImg';
+import Badge from './Badge';
+import Socials from './Socials';
 
 const Hero = () => {
   return (
@@ -22,10 +22,12 @@ const Hero = () => {
             <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
               Investigações
             </div>
-            <h1 className="h1 mb-4">Akopol: Detetives especializado, soluções eficazes</h1>
+            <h1 className="h1 mb-4">
+              Akopol: Detetives especializado, soluções eficazes
+            </h1>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
-            "Mais difícil do que tornar-se um líder,
-            é manter a liderança por mais de 37 anos"
+              Mais difícil do que tornar-se um líder, é manter a liderança por
+              mais de 37 anos
             </p>
             {/* button */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
@@ -34,7 +36,7 @@ const Hero = () => {
                   Contact me
                   <Send size={18} />
                 </Button>
-              </Link>             
+              </Link>
             </div>
             {/* socials */}
             <Socials
@@ -46,14 +48,14 @@ const Hero = () => {
           <div className="hidden xl:flex relative">
             {/*Badge*/}
             <Badge
-              containerStyles={"absolute top-[24%] -left-[5rem]"}
+              containerStyles={'absolute top-[24%] -left-[5rem]'}
               icon={<RiBriefcase4Fill />}
               endCountNum={37}
               badgeText="Anos de mercado"
             />
             {/*Badge 2*/}
             <Badge
-              containerStyles={"absolute top-[65%] -left"}
+              containerStyles={'absolute top-[65%] -left'}
               icon={<RiTodoFill />}
               endCountNum={10}
               endCountText="k"
@@ -61,7 +63,7 @@ const Hero = () => {
             />
             {/*Badge 3*/}
             <Badge
-              containerStyles={"absolute top-[55%] -right-8"}
+              containerStyles={'absolute top-[55%] -right-8'}
               icon={<RiTeamFill />}
               endCountNum={1}
               endCountText="ª"

@@ -1,44 +1,44 @@
-import DevImg from "./DevImg";
-import Image from "next/image";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import DevImg from './DevImg';
+import Image from 'next/image';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
-import {  
+import {
   HomeIcon,
   PhoneCall,
   GraduationCap,
   Calendar,
-  Building2
-} from "lucide-react";
-import { Key } from "react";
+  Building2,
+} from 'lucide-react';
+import { Key } from 'react';
 
 const infoData = [
   {
     icon: <Building2 size={20} />,
-    text: "Agência Akopol Detetives Particulares",
+    text: 'Agência Akopol Detetives Particulares',
   },
   {
     icon: <PhoneCall size={20} />,
-    text: "+55319999999999",
+    text: '+55319999999999',
   },
   {
     icon: <HomeIcon size={20} />,
-    text: "Rua Florêncio de Abreu, 681 - 4º Andar - Sala 407",
-  },    
+    text: 'Rua Florêncio de Abreu, 681 - 4º Andar - Sala 407',
+  },
 ];
 
 const qualificationData = [
   {
-    title: "Formação",
+    title: 'Formação',
     data: [
       {
-        university: "Curso Superior",
-        qualification: "Tecnologia em Investigação Profissional",
-        years: "2024 - 2028",
+        university: 'Curso Superior',
+        qualification: 'Tecnologia em Investigação Profissional',
+        years: '2024 - 2028',
       },
       {
-        university: "M.T.E - Ministério do Trabalho e Emprego",
-        qualification: "Registro Profissional de Jornalista",
-        years: "2022 - 2022",
+        university: 'M.T.E - Ministério do Trabalho e Emprego',
+        qualification: 'Registro Profissional de Jornalista',
+        years: '2022 - 2022',
       },
     ],
   },
@@ -46,25 +46,25 @@ const qualificationData = [
 
 const skillData = [
   {
-    title: "areas",
+    title: 'areas',
     data: [
       {
-        name: "Conjugal",
+        name: 'Conjugal',
       },
       {
-        name: "Familiar",
+        name: 'Familiar',
       },
       {
-        name: "Empresarial",
+        name: 'Empresarial',
       },
       {
-        name: "Industrial",
+        name: 'Industrial',
       },
       {
-        name: "Trabalhista",
-      },      
+        name: 'Trabalhista',
+      },
     ],
-  },  
+  },
 ];
 
 const About = () => {
@@ -97,7 +97,7 @@ const About = () => {
                   className="w-[162px] xl:w-auto"
                   value="qualification"
                 >
-                  Qualificações 
+                  Qualificações
                 </TabsTrigger>
                 <TabsTrigger className="w-[162px] xl:w-auto" value="skills">
                   Áreas de atuação
@@ -107,10 +107,15 @@ const About = () => {
                 <TabsContent value="personal">
                   <div className="text-center xl:text-left ">
                     <h3 className="h3 mb-4">
-                    Consultoria e Assessoria de Informações Privadas: Serviço Secreto Profissional
+                      Consultoria e Assessoria de Informações Privadas: Serviço
+                      Secreto Profissional
                     </h3>
                     <p className="subtitle max-auto xl:mx-0">
-                    Todos os nossos Agentes foram treinados e capacitados para o uso de suas atribuições, pelo nosso Serviço de Inteligência para obter na Legalidade da Lei e da Profissão: Fotos, Filmagens, Depoimentos, Entrevistas e Declarações.
+                      Todos os nossos Agentes foram treinados e capacitados para
+                      o uso de suas atribuições, pelo nosso Serviço de
+                      Inteligência para obter na Legalidade da Lei e da
+                      Profissão: Fotos, Filmagens, Depoimentos, Entrevistas e
+                      Declarações.
                     </p>
                     {/* icons */}
                     <div className="grid xl:grid-cols-2 gap-4 mb-12">
@@ -128,7 +133,9 @@ const About = () => {
                     </div>
                     {/* languages */}
                     <div className="flex flex-col gap-y-2">
-                      <div className="text-primary">RIBEIRÃO PRETO E REGIÃO.</div>
+                      <div className="text-primary">
+                        RIBEIRÃO PRETO E REGIÃO.
+                      </div>
                       <div className="border-b border-border"></div>
                       <div>SP E REGIÃO.</div>
                     </div>
@@ -145,22 +152,35 @@ const About = () => {
                       <div className="flex gap-x-4 items-center text-[22px] text-primary">
                         <GraduationCap size={32} />
                         <h4 className="capitalize font-medium">
-                          {getData(qualificationData, "Formação").title}
+                          {getData(qualificationData, 'Formação').title}
                         </h4>
                       </div>
                       {/* list */}
                       <div className="flex flex-col gap-y-8">
-                        {getData(qualificationData, "Formação").data.map(
-                          (item: { university: any; qualification: any; years: any; }, index: Key | null | undefined) => {
-                            const { university, qualification, years }= item;
+                        {getData(qualificationData, 'Formação').data.map(
+                          (
+                            item: {
+                              university: any;
+                              qualification: any;
+                              years: any;
+                            },
+                            index: Key | null | undefined
+                          ) => {
+                            const { university, qualification, years } = item;
                             return (
                               <div className="flex gap-x-8 group" key={index}>
                                 <div className="h-[84px] w-[1px] bg-border relative ml-2"></div>
                                 <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -letf-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
                                 <div>
-                                  <div className="font-semibold text:cl leading-none mb-2">{university}</div>
-                                  <div className="text-lg leading-none text-muted-foreground mb-4">{qualification}</div>
-                                  <div className="text-base font-medium">{years}</div>
+                                  <div className="font-semibold text:cl leading-none mb-2">
+                                    {university}
+                                  </div>
+                                  <div className="text-lg leading-none text-muted-foreground mb-4">
+                                    {qualification}
+                                  </div>
+                                  <div className="text-base font-medium">
+                                    {years}
+                                  </div>
                                 </div>
                               </div>
                             );
@@ -179,16 +199,24 @@ const About = () => {
                       <div className="border-b border-border mb-4"></div>
                       {/* skill list */}
                       <div>
-                        {getData(skillData, "areas").data.map((item: { name: any; }, index: Key | null | undefined) =>{
-                          const {name} = item
-                          return (
-                            <div className="w-2/4 text-center xl:text-left mx-auto xl:mx-0" key={index}>
-                              <div className="font-medium h4">{name}</div>
-                            </div>
-                          )
-                        })}
+                        {getData(skillData, 'areas').data.map(
+                          (
+                            item: { name: any },
+                            index: Key | null | undefined
+                          ) => {
+                            const { name } = item;
+                            return (
+                              <div
+                                className="w-2/4 text-center xl:text-left mx-auto xl:mx-0"
+                                key={index}
+                              >
+                                <div className="font-medium h4">{name}</div>
+                              </div>
+                            );
+                          }
+                        )}
                       </div>
-                    </div>                    
+                    </div>
                   </div>
                 </TabsContent>
               </div>

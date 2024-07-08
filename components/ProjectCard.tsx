@@ -1,8 +1,8 @@
-import Image from "next/image";
-import Link from "next/link";
-import { Card, CardHeader } from "./ui/card";
-import { Github, Link2Icon } from "lucide-react";
-import { Badge } from "./ui/badge";
+import Image from 'next/image';
+import Link from 'next/link';
+import { Card, CardHeader } from './ui/card';
+import { Github, Link2Icon } from 'lucide-react';
+import { Badge } from './ui/badge';
 
 const ProjectCard = ({ project }: any) => {
   return (
@@ -17,7 +17,7 @@ const ProjectCard = ({ project }: any) => {
             width={247}
             height={250}
             priority
-          />          
+          />
         </div>
       </CardHeader>
       <div className="h-full  px-8 py-6">

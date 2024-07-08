@@ -1,10 +1,16 @@
-"use client";
+'use client';
 
-import React from "react";
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
-import { Textarea } from "./ui/textarea";
-import { User, MailIcon, ArrowRightIcon, MessageSquare, MessageCircle } from "lucide-react";
+import React from 'react';
+import { Button } from './ui/button';
+import { Input } from './ui/input';
+import { Textarea } from './ui/textarea';
+import {
+  User,
+  MailIcon,
+  ArrowRightIcon,
+  MessageSquare,
+  MessageCircle,
+} from 'lucide-react';
 
 const Form: React.FC = () => {
   return (
@@ -21,8 +27,9 @@ const Form: React.FC = () => {
         <Textarea placeholder="Escreva sua mensagem aqui." />
         <MessageSquare className="absolute top-4 right-6" size={20} />
       </div>
-      <Button className="flex items-center gap-x-1 max-w-[166px]">Enviar
-        <ArrowRightIcon size={20}/>
+      <Button className="flex items-center gap-x-1 max-w-[166px]">
+        Enviar
+        <ArrowRightIcon size={20} />
       </Button>
     </form>
   );
